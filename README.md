@@ -1,7 +1,7 @@
 ### Command Install
 
 ```
-rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/senowahyu62/scriptvps/main/setup.sh && chmod +x setup.sh && ./setup.sh
+rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/budijoi/scriptvps/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 
 ### Fitur Script
@@ -16,18 +16,6 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 • XRAY VLESS
 
 • XRAY TROJAN
-
-• SHADOWSOCKS
-
-• SSR
-
-• PPTP VPN
-
-• L2TP VPN
-
-• SSTP VPN
-
-• WIREGUARD
 
 • TROJAN GO
 
@@ -56,20 +44,6 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 • Badvpn                  : 7100, 7200, 7300
 
 • Nginx                   : 89
-
-• Wireguard               : 7070
-
-• L2TP/IPSEC VPN          : 1701
-
-• PPTP VPN                : 1732
-
-• SSTP VPN                : 444
-
-• Shadowsocks-R           : 1443-1543
-
-• SS-OBFS TLS             : 2443-2543
-
-• SS-OBFS HTTP            : 3443-3543
 
 • XRAYS Vmess TLS         : 8443
 
