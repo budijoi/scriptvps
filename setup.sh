@@ -59,13 +59,13 @@ wget https://${akbarvpnnnnnn}/ins-xray.sh && chmod +x ins-xray.sh && screen -S x
 wget https://${akbarvpn}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://${akbarvpnn}/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
-wget https://${akbarvpnnn}/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://${akbarvpnnnn}/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+#wget https://${akbarvpnnn}/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+#wget https://${akbarvpnnnn}/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #installwg
-wget https://${akbarvpnnnnn}/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+#wget https://${akbarvpnnnnn}/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install L2TP
-wget https://${akbarvpnnnnnnn}/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
-wget https://${akbarvpnnnnnnnn}/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+#wget https://${akbarvpnnnnnnn}/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+#wget https://${akbarvpnnnnnnnn}/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 # Websocket
 wget https://${akbarvpnnnnnnnnn}/edu.sh && chmod +x edu.sh && ./edu.sh
 # Ohp Server
@@ -73,9 +73,9 @@ wget https://${akbarvpnnnnnnnnnn}/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
-rm -f /root/wg.sh
-rm -f /root/ss.sh
-rm -f /root/ssr.sh
+#rm -f /root/wg.sh
+#rm -f /root/ss.sh
+#rm -f /root/ssr.sh
 rm -f /root/ins-xray.sh
 rm -f /root/ipsec.sh
 rm -f /root/set-br.sh
@@ -114,13 +114,6 @@ echo "   - Dropbear                : 443, 109, 143"  | tee -a log-install.txt
 echo "   - Squid Proxy             : 3128, 8080"  | tee -a log-install.txt
 echo "   - Badvpn                  : 7100, 7200, 7300"  | tee -a log-install.txt
 echo "   - Nginx                   : 89"  | tee -a log-install.txt
-echo "   - Wireguard               : 7070"  | tee -a log-install.txt
-echo "   - L2TP/IPSEC VPN          : 1701"  | tee -a log-install.txt
-echo "   - PPTP VPN                : 1732"  | tee -a log-install.txt
-echo "   - SSTP VPN                : 444"  | tee -a log-install.txt
-echo "   - Shadowsocks-R           : 1443-1543"  | tee -a log-install.txt
-echo "   - SS-OBFS TLS             : 2443-2543"  | tee -a log-install.txt
-echo "   - SS-OBFS HTTP            : 3443-3543"  | tee -a log-install.txt
 echo "   - XRAYS Vmess TLS         : 8443"  | tee -a log-install.txt
 echo "   - XRAYS Vmess None TLS    : 80"  | tee -a log-install.txt
 echo "   - XRAYS Vless TLS         : 8443"  | tee -a log-install.txt
@@ -148,7 +141,7 @@ echo "   - Auto Delete Expired Account" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
-echo " Reboot 15 Sec"
-sleep 15
+echo "== > VPS Akan Reboot Dalam 5 Detik"
+sleep 5
 rm -f setup.sh
 reboot
