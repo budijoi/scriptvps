@@ -1,0 +1,4 @@
+clear
+wget git.io/warp
+clear
+warpmenu
