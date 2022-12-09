@@ -25,10 +25,12 @@ echo -e "${NC}${LIGHT}WhatsApp : 081545854516"
 echo -e "${NC}${LIGHT}Telegram : https://t.me/Akbar218"
 exit 0
 fi
+member
 read -p "Username SSH to Delete : " Pengguna
 
 if getent passwd $Pengguna > /dev/null 2>&1; then
         userdel $Pengguna
+        clear
         echo -e "Username $Pengguna Telah Di Hapus"
 else
         echo -e "Failure: Username $Pengguna Tidak Ada"
