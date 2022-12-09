@@ -1,0 +1,4 @@
+clear
+bash warp.sh wg4
+clear
+warpmenu
